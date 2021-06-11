@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(5, auto);
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+  min-height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+
+  border: 4px greenyellow solid;
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.tile--set {
+  background: red;
+  text-decoration: line-through;
+
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  pointer-events: none;
+}

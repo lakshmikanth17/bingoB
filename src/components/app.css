@@ -1,0 +1,138 @@
+body {
+  background-color: #f6f7fa;
+  font-family: Avenir ,sans-serif;
+  padding: 2px;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.maxw-95 {
+  max-width: 95vmin;
+}
+
+.instructions ul, .instructions p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.bb-3 {
+  border-bottom: 3px solid black;
+}
+
+.bb-5 {
+  border-bottom: 5px solid black;
+}
+
+*[role='grid'] {
+  border-collapse: collapse;
+  grid-gap: 5px;
+  width: 100%;
+  padding: 2rem;
+  outline: 4px solid #dddbda;
+}
+
+*[role='gridcell'] {
+  outline: 2px solid gray;
+  position: relative;
+}
+
+*[role='gridcell']:before {
+  content: '';
+  display: grid;
+  grid-gap: 15px;
+  padding-top: 100%;
+}
+
+.cell-contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.center {
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+}
+
+.cell-toggle {
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  overflow: auto;
+
+  background: white;
+  border: 0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cell-toggle[aria-pressed='true'] {
+  background: greenyellow;
+  color: black;
+  font-style: italic;
+}
+
+.cell-toggle[aria-disabled='true'] {
+  cursor: default;
+}
+
+.cell-toggle:focus {
+  outline: none;
+}
+
+@media only screen and (max-device-width : 480px) {
+  .cell-toggle {
+    font-size: .7rem;
+  }
+}
+
+.blue-button {
+  background-color: #1460AA;
+}
+
+.refresh {
+  position:absolute;
+/*  transition: .5s ease;
+  top: 9px;
+  left: -650px;
+  right: -420px;
+  bottom: -191px;
+  font-size: 20px;
+  border-radius: 6px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  transition-duration: 0.4s;*/
+
+  /*
+  position:absolute;
+  */
+}
+.refresh:hover {
+  background-color: greenyellow; /* Green */
+  color: black;
+}
+
+.h1 {
+  margin: 0;
+    display: inline-block;
+}
+.app {
+  text-align: center;
+}
+
+ol {
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.success {
+  bottom: 0;
+  right: 0;
+  left: 1px; /* midnight hack */
+  background-color: #EAEDF5;
+  outline: 4px solid #dddbda;
+}
